@@ -1,0 +1,11 @@
+version: '3.1'
+services:
+  app:
+    build: 
+      context: .
+      dockerfile: app.dockerfile
+    image: kasparsu/learndocker:latest
+    ports: 
+      - 8080:80
+    # volumes:
+    #   - ./html:/var/www/html
